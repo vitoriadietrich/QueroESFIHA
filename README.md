@@ -80,7 +80,10 @@ O objetivo deste exercício é praticar os fundamentos da programação em Java 
 
 ## Autores
 
-**Vitória Dietrich e Felipe Clementino**
+**Vitória Dietrich**
 
 [Vitória Dietrich](https://github.com/vitoriadietrich)
+
+**Felipe Clementino**
+
 [Felipe Clementino](https://github.com/fclementino)
