@@ -83,3 +83,4 @@ O objetivo deste exercício é praticar os fundamentos da programação em Java 
 **Vitória Dietrich e Felipe Clementino**
 
 [GitHub](https://github.com/vitoriadietrich)
+[GitHub](https://github.com/fclementino)
