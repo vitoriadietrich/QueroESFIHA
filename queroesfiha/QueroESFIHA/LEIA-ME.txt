@@ -1,0 +1,60 @@
+QueroESFIHA - versao JavaFX do exe50.java
+==========================================
+
+ESTRUTURA
+---------
+QueroESFIHA/
+├── pom.xml
+├── LEIA-ME.txt
+└── src/
+    └── main/
+        └── java/
+            ├── QueroEsfihaApp.java   (janela principal)
+            ├── Produto.java          (combo ou bebida: nome, preco, estoque)
+            └── ItemCarrinho.java     (produto + quantidade no carrinho)
+
+COMO RODAR
+----------
+1. Descompacte a pasta QueroESFIHA fora do OneDrive se possivel
+   (ex.: C:\projetos\QueroESFIHA) - o OneDrive as vezes trava o Maven.
+
+2. Abra essa pasta no VS Code (File > Open Folder). Precisa ser a pasta
+   que tem o pom.xml dentro.
+
+3. No terminal do VS Code:
+
+   mvn clean javafx:run
+
+4. A janela do QueroESFIHA abre com abas de Combos e Bebidas.
+
+O QUE FOI MANTIDO DO exe50.java
+--------------------------------
+- Os 6 combos, com as mesmas descricoes, precos e estoque inicial.
+- As 6 bebidas, com os mesmos precos e estoque inicial.
+- A regra do desconto VIP: 10% de desconto quando o cliente e VIP
+  e o total e maior ou igual a R$ 40 (igual ao "if (VIP == true &&
+  valor >= 40)" do codigo original).
+- As 4 formas de pagamento: Debito, Credito, Vale Refeicao ou
+  Alimentacao e PIX.
+- A logica de nao deixar comprar sem estoque.
+
+O QUE MUDOU (versao grafica em vez de texto)
+---------------------------------------------
+- Em vez de digitar numeros no console, voce escolhe o combo/bebida
+  em uma caixa de selecao e a quantidade em um campo numerico.
+- O carrinho mostra todos os itens escolhidos antes de finalizar
+  (no original, cada compra ia direto pro "Comprar()").
+- O checkbox "Cliente VIP" comeca marcado (equivalente ao
+  "static boolean VIP = true;"), mas agora pode ser desmarcado
+  na tela para testar sem desconto.
+- E possivel remover um item ou limpar o carrinho antes de fechar
+  o pedido, e o estoque volta certinho se voce remover algo.
+
+SE DER ERRO
+-----------
+- "Output directory is empty": rode o mvn de dentro da pasta que
+  tem o pom.xml, ja garantido aqui pela estrutura src/main/java.
+- "mvn nao e reconhecido": o Maven nao esta instalado ou nao esta
+  no PATH do Windows.
+- Qualquer outro erro: copia as ultimas linhas do terminal e manda
+  aqui que a gente resolve.
